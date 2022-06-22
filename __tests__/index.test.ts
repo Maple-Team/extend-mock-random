@@ -1,5 +1,6 @@
 import { Random } from 'mockjs'
-import { constellations } from '../src/index'
+import '../src/index' // NOTE extend
+import { constellations } from '../src/utils'
 
 describe('mock-extend test cases', () => {
   it('Random.constellations() should return one element of constellations', () => {
@@ -16,5 +17,9 @@ describe('mock-extend test cases', () => {
     expect(strings[1].length).toBeLessThanOrEqual(40)
     expect(strings[2].length).toBeGreaterThanOrEqual(20)
     expect(strings[2].length).toBeLessThanOrEqual(40)
+  })
+  it('Random.sn() should return string with 18 length', () => {
+    const sn: string = Random.sn()
+    expect(sn.length).toBe(18)
   })
 })

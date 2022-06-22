@@ -1,28 +1,15 @@
 import { Random, mock } from 'mockjs'
 import * as moment from 'moment'
+import { constellations } from './utils'
 
-// extend mockjs random
 declare module 'mockjs' {
   interface MockjsRandom {
     constellation(): string
     jwt(): string
+    sn(): string
   }
 }
 
-export const constellations = [
-  '白羊座',
-  '金牛座',
-  '双子座',
-  '巨蟹座',
-  '狮子座',
-  '处女座',
-  '天秤座',
-  '天蝎座',
-  '射手座',
-  '摩羯座',
-  '水瓶座',
-  '双鱼座',
-]
 Random.extend({
   constellation: function () {
     return this.pick(constellations)
@@ -72,7 +59,7 @@ Random.extend({
    * @param patch 补丁版本号取值范围
    * @returns
    */
-  SemVer: function (major: number, minor: number, patch: number) {
+  semVer: function (major: number, minor: number, patch: number) {
     return `${this.natural(0, major || 10)}.${this.natural(
       0,
       minor || 100
