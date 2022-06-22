@@ -1,0 +1,11 @@
+// for build
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "."
+  },
+  "exclude": [
+    "jest.config.ts",
+    "__tests__"
+  ]
+}

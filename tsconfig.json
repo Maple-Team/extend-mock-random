@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES5",
+    "outDir": "lib",
+    "lib": [
+      "ES2015"
+    ],
+    "declaration": true,
+    "declarationDir": "types",
+    "removeComments": true,
+    "rootDir": "src",
+  },
+  "exclude": [
+    "__tests__",
+    "jest.config.ts"
+  ]
+}
