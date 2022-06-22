@@ -1,4 +1,4 @@
-extend mockjs Random's method
+A lib to extend mockjs Random's methods
 
 ## usage
 
@@ -6,6 +6,7 @@ extend mockjs Random's method
 import '@autel/mock-extend'
 import { Random } from 'mockjs'
 
+// then you can call extended method like Random.unix()
 console.log(Random.unix())
 ```
 

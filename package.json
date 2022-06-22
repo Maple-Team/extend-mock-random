@@ -1,19 +1,40 @@
 {
   "name": "@autel/mock-extend",
   "version": "0.0.2",
-  "description": "mockjs extend methods",
-  "scripts": {
-    "test": "jest",
-    "build": "rimraf types && tsc",
-    "prepare": "husky install",
-    "prepublish": "npm run build"
-  },
+  "description": "A lib to extend mockjs Random's methods",
   "keywords": [
     "mockjs",
     "extend methods"
   ],
   "author": "liutsing <liutsingluo@gmail.com>",
   "license": "ISC",
+  "main": "lib/index.js",
+  "typings": "types/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "types": "types"
+  },
+  "files": [
+    "lib",
+    "types"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Maple-Team/extend-mockjs-random"
+  },
+  "bugs": {
+    "url": "https://github.com/Maple-Team/extend-mockjs-random/issues"
+  },
+  "homepage": "https://github.com/Maple-Team/extend-mockjs-random",
+  "scripts": {
+    "test": "jest",
+    "build": "rimraf types && tsc",
+    "prepare": "husky install",
+    "prepublish": "npm run build"
+  },
   "dependencies": {
     "husky": "^8.0.1",
     "mockjs": "^1.1.0",
@@ -32,18 +53,5 @@
     "ts-jest": "^28.0.5",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.4"
-  },
-  "main": "lib/index.js",
-  "types": "types/index.d.ts",
-  "directories": {
-    "lib": "lib",
-    "types": "types"
-  },
-  "files": [
-    "lib",
-    "types"
-  ],
-  "publishConfig": {
-    "access": "public"
   }
 }
