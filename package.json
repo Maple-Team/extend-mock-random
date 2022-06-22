@@ -1,6 +1,6 @@
 {
   "name": "@autel/mock-extend",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "mockjs extend methods",
   "scripts": {
     "test": "jest",
